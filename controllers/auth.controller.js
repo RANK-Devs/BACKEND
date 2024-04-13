@@ -72,7 +72,7 @@ export const sendEmail = async (req, res, next)=>{
     const payload = {
         email: user.email
     }
-    const expiryTime = 300;
+    const expiryTime = 900;
     const token = jwt.sign(payload, process.env.JWT_SECRET, {expiresIn: expiryTime});
 
     const newToken = new userToken({
