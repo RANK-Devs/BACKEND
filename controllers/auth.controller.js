@@ -100,7 +100,7 @@ export const sendEmail = async (req, res, next)=>{
             <p>Dear ${user.fname},</p>
             <p>We have received a request to reset your password for your account with UnladKomunidad: OCES Management System. To complete the password reset process, please click on the button below:</p>
             <a href="${process.env.LIVE_URL}/reset/${token}"><button style="background-color: #46AF50; color: white; padding: 14px 20px; border: none; cursor: pointer; border-radius: 4px;">Reset Password</button></a>
-            <p>Please note that this link is only valid for 5 minutes. If you did not request a password reset, please disregard this message.</p>
+            <p>Please note that this link is only valid for 15 minutes. If you did not request a password reset, please disregard this message.</p>
             <p>Thank you,</p>
             <p>UnladKomunidad Team</p>
         </body>
